@@ -1,0 +1,20 @@
+<div class="table-container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Articles Count</th>
+        <th>Total Favorites</th>
+        <th>First Article Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of roster">
+        <td><a href="{{ user.profileLink }}">{{ user.username }}</a></td>
+        <td>{{ user.articleCount }}</td>
+        <td>{{ user.totalFavorites }}</td>
+        <td>{{ user.firstArticleDate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
